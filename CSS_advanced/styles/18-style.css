@@ -1,0 +1,44 @@
+/* Define custom properties for navbar item styling */
+:root {
+    --nav-item-font-family: var(--font-family-title);
+    --nav-item-font-weight: var(--font-weight-bold);
+    --nav-item-font-size: var(--font-size-medium);
+    --nav-item-letter-spacing: 0.04rem; /* 4% of root font size */
+    --nav-item-display: inline-block;
+    --nav-item-margin: 0 0 3rem 0; /* 3rem margin at bottom only */
+    --nav-item-link-hover: var(--color-primary);
+}
+
+/* Navbar menu floated to the right */
+.navbar-menu {
+    float: right;
+}
+
+/* Reset nav styling */
+nav {
+    margin: 0;
+    padding: 0;
+    list-style: none; /* Remove default list styles */
+    text-align: center;
+}
+
+/* Nav items styling */
+nav .nav-item {
+    font-family: var(--nav-item-font-family);
+    font-weight: var(--nav-item-font-weight);
+    font-size: var(--nav-item-font-size);
+    letter-spacing: var(--nav-item-letter-spacing);
+    display: var(--nav-item-display);
+    margin: var(--nav-item-margin);
+}
+
+/* Nav links styling */
+nav .nav-link {
+    display: block;
+    padding: 0.5rem 1rem; /* Half root font-size (0.5rem) top and bottom, full root (1rem) left and right */
+}
+
+/* Nav links hover effect */
+nav .nav-link:hover {
+    color: var(--nav-item-link-hover);
+}
